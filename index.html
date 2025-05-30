@@ -5,21 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>freefit</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/favicon.svg">
 </head>
 <body>
     <header class="conteyner">
         <div class="header">
             <div class="header_box_left">
                 <a class="logo" href="index.html"></a>
+                <!-- btn_burger -->
+                <button class="btn_burger" id="btnBurger"></button>
                 <nav class="nav">
-                    <a class="nav_text" href="">Мероприятия</a>
-                    <a class="nav_text" href="">Расписание</a>
-                    <a class="nav_text" href="">О компании</a>
+                    <a class="nav_text" href="#meropriyaniya">Мероприятия</a>
+                    <a class="nav_text" href="#raspisanie">Расписание</a>
+                    <a class="nav_text" href="#company">О компании</a>
                 </nav>
             </div>
             <a class="nav_text_sayt" href="">info@freefit.com</a>
         </div>
     </header>
+
 
 
 
@@ -30,22 +34,25 @@
                 <p class="section_top_text_2">&gt 15 тренировок</p>
                 <div class="section_top_box">
                     <p class="section_top_text_3">в области спортивной<br> физиологии и нутрициологии</p>
-                    <a class="botton" href="">УЗНАТЬ ПОДРОБНЕЕ</a>
+                    <a class="botton" href="#raspisanie">УЗНАТЬ ПОДРОБНЕЕ</a>
                 </div>
             </div>
         </div>
-        
+
         <img class="section_img_girl" src="img/girl.png" alt="">
 
         <div class="box_top"></div>
 
-        <div class="botton_circle">	<img src="img/arrow.svg" alt=""></div>
+        <a href="#raspisanie"><div class="botton_circle">	
+            <img class="botton_circle" src="img/arrow.svg" alt="">
+        </div></a>
     </section>
 
 
 
-    <section class="section_2">
-        <div class="conteyner">
+
+    <div class="conteyner">
+    <section class="section_2" id="raspisanie">
             <div class="grid_box_1">
                 <div class="grid_box_text">
                     <h3>Расписание тренировок</h3>
@@ -107,17 +114,111 @@
         </div>
     </section>
 
+<!-- section 3 -->
 
-    <section class="section_4">
+    <section class="section_3" id="meropriyaniya">
+        <h3 class="section_3_text_top">Подпишитесь на рассылку</h3>
+    <form action="" class="form">
+        <div class="box_form">
+            <input class="input" type="email" placeholder="Ваш e-mail">
+        </div>
+
+        <a class="botton" href="">ПОДПИСАТЬСЯ</a>
+
+    </form>
+        <div class="agreement">
+            <input type="checkbox" id="01" class="checkbox">
+            <label class="label" for="01">Согласен с обработкой <a class="label" href="#" target="_blank">персональных данных</a></label>
+        </div>
+
+    </section>
+
+
+
+    <section class="section_4" id="company">
         <div class="conteyner">
-            <div class="section_4_left">
-                <h3>О компании</h3>
-                <div class="section_4_left_text">
-
+            <div class="section_4_box">
+                <div class="section_4_left">
+                    <h3>О компании</h3>
+                    <div class="section_4_left_text">
+                        <p>Наша компания является одной из немногих, кто предлагает фитнес услуги онлайн! Оставайтесь с нами и вы сами увидите, что мы проводим не только онлайн-тренировки.</p>
+                    </div>
+                    <a class="botton" href="">ЗАПИСАТЬЯ</a>
+                </div>
+                <img class="section_4_img" src="img/Image_1.png" alt="">
+            </div>
+            <div class="section_4_box_bottom">
+                <div class="section_4_box_bottom_1">
+                    <h4>Экономия времени</h4>
+                    <p class="text_section_4">Не нужно тратить время на дорогу</p>
+                </div>
+                <div class="section_4_box_bottom_1">
+                    <h4>Индивидуальный подход</h4>
+                    <p class="text_section_4">Внимание тренера принадлежит только вам</p>
+                </div>
+                <div class="section_4_box_bottom_1">
+                    <h4>Экономия денег</h4>
+                    <p class="text_section_4">Средняя цена одной тренировки - 700₽</p>
+                </div>
+                <div class="section_4_box_bottom_1">
+                    <h4>Экономия времени </h4>
+                    <p class="text_section_4">Стаж работы у наших тренеров от 5 лет</p>
                 </div>
             </div>
         </div>
     </section>
 
+
+    <footer class="footer">
+        <div class="conteyner">
+            <div class="footer_box">
+                <div class="footer_box_left">
+                    <a class="logo" href="index.html"></a>
+                    <nav class="nav_footer">
+                        <a class="nav_text_footer" href="#meropriyaniya">Мероприятия</a>
+                        <a class="nav_text_footer" href="#raspisanie">Расписание</a>
+                        <a class="nav_text_footer" href="#company">О компании</a>
+                    </nav>
+                </div>
+                <a class="nav_text_sayt" href="">info@freefit.com</a>
+            </div>
+            <div class="footer_min">
+                <div>
+                    <p class="footer_min_text">&copy; 2022, Все права защищены</p>
+                </div>
+                <div>
+                    <p class="footer_min_text">Сделано в рамках курса учебной платформы Frontend Blok</p>
+                </div>
+            </div>
+
+            <!--  -->
+            <div class="footer_box_min">
+                <div class="footer_box_min_1">
+                    <a href="index.html"><img class="logo" src="img/logo.svg" alt=""></a>
+                    <p class="footer_min_text">Сделано в рамках курса учебной платформы Frontend Blok</p>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+<!--  -->
+    <div class="modal" id="modal">
+        <div class="modal_top_box">
+            <div class="modal_top_menu">
+                <a class="logo" href="index.html"></a>
+                <button type="button" class="btn_close" id="btnClose"></button>
+            </div>
+            <nav class="nav">
+                <a class="nav_text" href="#meropriyaniya">Мероприятия</a>
+                <hr>
+                <a class="nav_text" href="#raspisanie">Расписание</a>
+                <hr>
+                <a class="nav_text" href="#company">О компании</a>
+            </nav>
+        </div>
+        <div class="modal_bottom_fon"></div>
+    </div>
+
+    <script src="js/scripts.js"></script>
 </body>
 </html>
