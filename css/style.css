@@ -102,9 +102,6 @@ h1{
     top: 3px;
     right: -160px;
     z-index: 1;
-    object-fit: contain;
-    overflow: hidden;
-    object-fit: contain;
 }
 .section_top_box{
     margin-left: 90px;
