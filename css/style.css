@@ -658,6 +658,9 @@ hr{
     .btn_burger{
         display: none;
     }
+    .section_3_min{
+        display: none;
+    }
 }
 @media (max-width:1200px){
     .section_img_girl{
