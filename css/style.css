@@ -89,9 +89,10 @@ a {
     top: -3px;
     opacity: 0;
     transition: var(--transition);
+    z-index: -1;
 }
 .nav_text:hover::before{
-    opacity: 0.5;
+    opacity: 1;
 }
 .nav_text_sayt::before{
     content: "";
@@ -104,9 +105,10 @@ a {
     top: -3px;
     opacity: 0;
     transition: var(--transition);
+    z-index: -1;
 }
 .nav_text_sayt:hover::before{
-    opacity: 0.5;
+    opacity: 1;
 }
 .btn_burger{
     background: transparent;
@@ -204,13 +206,13 @@ h1{
     color: var(--color_dark);
     font-size: 16px;
     font-weight: bold;
-    box-shadow: 0px 4px 4px var(--color_yellow);
+    box-shadow: 3px 3px 10px var(--color_yellow);
     transition: var(--transition);
 }
 .botton:hover{
     background: var(--color_dark);
     color: var(--color_yellow);
-    box-shadow: 0px 4px 4px var(--color_dark);
+    box-shadow: 3px 6px 20px #858585;
 }
 .botton_circle{
     position: absolute;
@@ -254,10 +256,13 @@ h3{
     max-width: 1143px;
     width: 100%;
     margin-top: 38px;
+    position: relative;
+    transition: var(--transition);
 }
 .grid_box:nth-child(1){
     grid-area: a;
 }
+
 .grid_box:nth-child(2){
     grid-area: b;
 }
@@ -273,14 +278,18 @@ h3{
 .grid_box:nth-child(6){
     grid-area: f;
 }
+
 /* наведение */
 .grid_box:hover:nth-child(1){
     background: var(--gradient_2);
     border: 1px solid transparent;
+    transition: var(--transition);
 }
+
 .grid_box:hover:nth-child(2){
     background: var(--gradient_2);
     border: 1px solid transparent;
+    transition: var(--transition);
 }
 .grid_box:hover:nth-child(3){
     background: var(--gradient_2);
@@ -450,6 +459,7 @@ h4{
     color: var(--color_dark);
     opacity: 30%;
     text-align: right;
+    white-space: nowrap;
 }
 .footer_box_min{
     max-width: 763px;
@@ -481,6 +491,7 @@ h4{
     padding: 18px;
     outline: none;
     border: 2px solid #ffffff;
+    font-family: var(--font);
 }
 .input:active{
     border: 2px solid #FBF138;
@@ -541,13 +552,13 @@ h4{
 .checkbox:checked + label::after{
    content:'';
    position: absolute;
-   width: 12px;
-   height: 12px;
+   width: 30px;
+   height: 10px;
    transition: all .2s ease;
    opacity: 1;
    left: 4px;
-   top: calc(50% - 6px);
-   background-size: cover;
+   top: calc(50% - 5px);
+   background-size: contain;
    background-repeat: no-repeat;
    background-image: url(/img/Vector.svg);
 }
@@ -567,16 +578,16 @@ h4{
 .checkbox:not(:checked) + label::after{
    content:'';
    position: absolute;
-   width: 12px;
-   height: 12px;
+   width: 30px;
+   height: 10px;
    transition: all .2s ease;
    opacity: 0;
    left: 4px;
-   top: calc(50% - 6px);
+   top: calc(50% - 5px);
    background-position: 0 -12px;
    background-color: transparent;
    background-repeat: no-repeat;
-   background-size: cover;
+   background-size: auto;
    background-image: url(/img/Vector.svg);
 }
 .radio:checked + label::before{
@@ -633,6 +644,7 @@ hr{
     height: 179px;
     background: #2B3541;
     margin-top: 40px;
+    height: 100vh;
     
 }
 /* burger close */
