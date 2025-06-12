@@ -247,22 +247,10 @@ h3{
     color: var(--color_dark);
     font-weight: bold;
 }
-.grid{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-areas: "a b c" "d b f" "d e f";
-    grid-template-rows: 309px 73px 281px;
-    gap: 20px;
-    max-width: 1143px;
-    width: 100%;
-    margin-top: 38px;
-    position: relative;
-    transition: var(--transition);
-}
+
 .grid_box:nth-child(1){
     grid-area: a;
 }
-
 .grid_box:nth-child(2){
     grid-area: b;
 }
@@ -283,13 +271,13 @@ h3{
 .grid_box:hover:nth-child(1){
     background: var(--gradient_2);
     border: 1px solid transparent;
-    transition: var(--transition);
+    /* transition: var(--transition); */
 }
 
 .grid_box:hover:nth-child(2){
     background: var(--gradient_2);
     border: 1px solid transparent;
-    transition: var(--transition);
+    /* transition: var(--transition); */
 }
 .grid_box:hover:nth-child(3){
     background: var(--gradient_2);
@@ -308,10 +296,22 @@ h3{
     border: 1px solid transparent;
 }
 
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "a b c" "d b f" "d e f";
+    grid-template-rows: 309px 73px 281px;
+    gap: 20px;
+    max-width: 1143px;
+    width: 100%;
+    margin-top: 38px;
+    position: relative;
+    transition: var(--transition);
+}
 .grid_box{
     border: 1px solid var(--color_dark);
-    transition: var(--transition);
-    padding: 20px 20px;
+    /* transition: var(--transition); */
+    padding: 20px 20px;   
 }
 .grid_box_min{
     width: 100%;
